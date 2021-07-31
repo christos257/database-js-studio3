@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to TrapperZoid</title>
+</head>
+<body style="background-color: black">
+    <h1 style='color: white'>Welcome to TrapperZoid</h1>
+
+
+    <form action="/Account" method="POST">
+        <label style="color: white;">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label style="color: white;">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label style="color: white;">Age:</label><br>
+        <input type="date" id="Age" name="Age" required><br>
+        <label style="color: white;">Email:</label><br>
+        <input type="email" id="Email" name="Email" required><br>
+        <label style="color: white;">Username:</label><br>
+        <input type="text" id="Username" name="Username" required><br>
+        <label style="color: white;">Password:</label><br>
+        <input type="password" id="Password" name="Password" required><br>
+        <button type="submit"  id="SubmitButton">Submit!</button>
+        <button type="reset" id="ResetButton">Reset</button>
+
+        <script type="text/javascript">
+            function ThereIsInput(){
+                var i = document.getElementById("fname")
+                if (i.nodeValue.length > 0) {
+                    document.getElementById("SubmitButton").disabled = true;
+                } 
+            }
+        </script>
+
+    </form>
+</body>
+</html>
