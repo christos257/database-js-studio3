@@ -6,7 +6,7 @@ const userRouter = require('./Routes/users')
 const leaderboardRouter = require('./Routes/leaderboard')
 const { resourceUsage } = require('process')
 const app = express()
-const port = 1997
+const port = 80
 
 database.ConnectToDB();
 app.use(express.static(path.join(__dirname, "public")));
